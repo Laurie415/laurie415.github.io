@@ -2561,8 +2561,12 @@ ul.list9 {
 }
 
 .big_text3 {
-	font-size: 16px;
+	font-size: 13px;
 	line-height: 25px;
+	margin-right: 600px;
+	margin-left: 333px;
+	position: relative;
+	margin-top: -400px;
 }
 
 

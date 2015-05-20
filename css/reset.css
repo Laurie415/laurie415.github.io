@@ -116,9 +116,10 @@ h6 {
 
 /* Text elements */
 p {
-	font: 14px 'Open Sans', sans-serif;
+	font: 19px 'Open Sans', sans-serif;
 	font-weight: normal;
 	line-height: 23px;
+	font-style: italic;
 }
 
 

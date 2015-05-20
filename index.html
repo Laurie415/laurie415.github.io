@@ -72,16 +72,16 @@
     <!--<link rel="stylesheet" href="css/bg-patterns/pattern-twelve.css" />-->
     <!--<link rel="stylesheet" href="css/bg-patterns/pattern-thirteen.css" />-->
     
-
+<script src="js/jquery.min.js"></script>
     
-    <!-- mega menu -->
-    <link href="js/mainmenu/bootstrap.min4.css" rel="stylesheet">
-    <link href="js/mainmenu/menu4.css" rel="stylesheet">
+       <!-- mega menu -->
+    <link href="js/mainmenu/bootstrap.min.css" rel="stylesheet">
+    <link href="js/mainmenu/menu.css" rel="stylesheet">
     
     <!-- MasterSlider -->
-	<link rel="stylesheet" href="js/masterslider/style/masterslider.css" />
+    <link rel="stylesheet" href="js/masterslider/style/masterslider.css" />
     <link rel="stylesheet" href="js/masterslider/skins/default/style.css" />
-	
+    
     <!-- owl carousel -->
     <link href="js/carouselowl/owl.transitions.css" rel="stylesheet">
     <link href="js/carouselowl/owl.carousel.css" rel="stylesheet">
@@ -89,6 +89,9 @@
     <!-- cubeportfolio -->
     <link rel="stylesheet" type="text/css" href="js/cubeportfolio/cubeportfolio.min.css">
     
+    <!-- accordion -->
+    <link rel="stylesheet" type="text/css" href="js/accordion/style.css" />
+
     <!-- forms -->
     <link rel="stylesheet" href="js/form/sky-forms.css" type="text/css" media="all">
     
@@ -103,20 +106,63 @@
 
 <header id="header">
 
-
-	<div id="trueHeader">
+    <!-- Top header bar -->
+    <div id="topHeader">
     
-	<div class="wrapper">
+    <div class="wrapper">
+         
+        <div class="top_nav">
+        <div class="container">
+            
+            <div class="left">
+            
+                <ul class="topsocial">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                </ul>
+            
+            </div><!-- end left links -->
+            
+            <div class="right">
+                
+                Call Us: <strong>(619) 363-1776</strong>       Email: <a href="mailto:lisa@pagewong.com">Lisa@pagewong.com</a>
+                
+            <div class="topsitesearch">
+                <form method="get" id="topsitesearchform" action="index.html">
+                    <div>
+                    <input class="input-text" name="s" id="s" value="Search..." onFocus="if (this.value == 'Search...') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Search...';}" type="text" />
+                    <input id="searchsubmit" value="Search" type="submit" />
+                    </div>
+                </form>
+            </div><!-- end site search -->
+            
+            
+        </div><!-- end right links -->
+        
+        </div>
+        </div>
+            
+    </div>
+    
+    </div><!-- end top navigations -->
+    
+    
+    <div id="trueHeader">
+    
+    <div class="wrapper">
     
      <div class="container">
     
-		<!-- Logo -->
-		<div class="logo4"><a href="index.html" id="logo4"></a></div>
-		
-	<!-- Navigation Menu -->
-	<nav class="menu_main4">
+        <!-- Logo -->
+        <div class="logo"><a href="index.html" id="logo"></a></div>
         
-	<div class="navbar yamm navbar-default">
+    <!-- Navigation Menu -->
+    <nav class="menu_main">
+        
+    <div class="navbar yamm navbar-default">
     
     <div class="container">
       <div class="navbar-header">
@@ -125,28 +171,28 @@
         </div>
       </div>
       
-      <div id="navbar-collapse-1" class="navbar-collapse collapse">
+      <div id="navbar-collapse-1" class="navbar-collapse collapse pull-right">
       
         <ul class="nav navbar-nav">
         
         <li class="dropdown"><a href="index.html" data-toggle="dropdown" class="dropdown-toggle active">Home</a>
-        	<!-- <ul class="dropdown-menu multilevel" role="menu">
-                <li><a href="index.html">Header Style 1</a></li>
+          <!--   <ul class="dropdown-menu multilevel" role="menu">
+                <li><a href="index.html" class="active">Header Style 1</a></li>
                 <li><a href="index-2.html">Header Style 2</a></li>
                 <li><a href="index-3.html">Header Style 3</a></li>
-                <li><a href="index-4.html" class="active">Header Style 4</a></li>
-         	</ul> -->
+                <li><a href="index-4.html">Header Style 4</a></li>
+            </ul> -->
         </li>
                
         <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">About Firm</a>
-            <!-- <ul class="dropdown-menu multilevel" role="menu">
+         <!--    <ul class="dropdown-menu multilevel" role="menu">
                 <li><a href="about.html">About Page Style 1</a></li>
                 <li><a href="about-2.html">About Page Style 2</a></li>
             </ul> -->
         </li>
         
         <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Attorneys</a>
-        	<!-- <ul class="dropdown-menu multilevel" role="menu">
+         <!--    <ul class="dropdown-menu multilevel" role="menu">
                 <li><a href="attorneys.html">Attorneys Style 1</a></li>
                 <li><a href="attorneys-2.html">Attorneys Style 2</a></li>
                 <li><a href="attorneys-3.html">Attorneys Style 3</a></li>
@@ -156,7 +202,7 @@
         </li>
         
         <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Practice Areas</a>
-        <!-- 	<ul class="dropdown-menu multilevel" role="menu">
+           <!--  <ul class="dropdown-menu multilevel" role="menu">
                 <li><a href="practice.html">Practice Areas Style 1</a></li>
                 <li><a href="practice-2.html">Practice Areas Style 2</a></li>
                 <li><a href="practice-3.html">Practice Areas Style 3</a></li>
@@ -164,22 +210,15 @@
             </ul> -->
         </li>
         
+        <li class="dropdown yamm-fw"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Features</a>
+        
+        
         <li class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Blog </a>
-        <!-- <ul class="dropdown-menu multilevel" role="menu">
-        	<li> <a href="blog-4.html">With Masonry</a> </li>
-            <li> <a href="blog.html">With Large Image</a> </li>
-            <li> <a href="blog-2.html">With Medium Image</a> </li>
-            <li> <a href="blog-3.html">With Small Image</a> </li>
-            <li> <a href="blog-post.html">Single Post</a> </li>
-        </ul> -->
+       
         </li>
         
         <li class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Contact </a>
-        <!-- <ul class="dropdown-menu" role="menu">
-          <li> <a href="contact.html">Contact Style 1</a> </li>
-          <li> <a href="contact2.html">Contact Style 2</a> </li>
-          <li> <a href="contact3.html">Contact Style 3</a> </li>
-        </ul> -->
+        
         </li>
         
         </ul>
@@ -188,20 +227,13 @@
       </div>
      </div>
      
-	</nav><!-- end Navigation Menu -->
-    
-    <div class="cdetails">
-    
-   		Call Us Confidentially Now
-		<strong>(619) 363-1776</strong>
-    
+    </nav><!-- end Navigation Menu -->
+        
+    </div>
+        
     </div>
     
-	</div>
-		
-	</div>
-    
-	</div>
+    </div>
     
 </header>
 
@@ -215,21 +247,21 @@
 <div class="master-slider ms-skin-default" id="masterslider">
 
     <!-- slide -->
-   	<div class="ms-slide slide-1" data-delay="7">
+    <div class="ms-slide slide-1" data-delay="7">
          
         <!-- slide background -->
         <img src="images/sliders/master/SDskyline2.png" alt=""/>     
         
-         <!-- <img src="images/sliders/master/dui2.jpg" alt="" class="ms-layer"
-            style="bottom:0"
-            data-effect="right(72)"
+         <img src="images/sliders/master/SDskyline2.png" alt="" class="ms-layer"
+            style="bottom:0; right:0px"
+            data-effect="right(0)"
             data-delay="0"
             data-duration="300"
-            data-type="image" -->
-		
+            data-type="image"
+        />
         
         <div class="ms-layer text1"
-        	style="left:116px; top:123px"
+            style="left:116px; top:123px"
             data-effect="bottom(50)"
             data-duration="900"
             data-delay="300"
@@ -237,81 +269,118 @@
         >NEED LEGAL <br /> ASSISTANCE?</div>
         
         <div class="ms-layer text2"
-        	style="left:116px; top:305px"
+            style="left:116px; top:305px"
             data-effect="left(100)"
             data-duration="2000"
             data-delay="500"
             data-ease="easeOutExpo"
-        >Get immediate help and confidential advice from <br />
-experienced attorneys.</div>
+        >Get immediate help and confidential advice from experienced attorneys.</div>
          
-        <!-- <div class="ms-layer sldbut1"
-        	style="left:116px; top:455px"
-            data-effect="right(50)"
-            data-duration="2000"
-            data-delay="500"
-            data-ease="easeOutExpo"
-        ><a href="#">Learn More</a></div> -->
+        
                 
-	</div><!-- end slide -->
+    </div><!-- end slide -->
     
     <!-- slide -->
-   	<!-- <div class="ms-slide slide-2" data-delay="7">
+    <!-- <div class="ms-slide slide-2" data-delay="7"> -->
          
-        slide background
-        <img src="images/sliders/master/" alt=""/>      -->
+        <!-- slide background -->
+       <!--  <img src="masterslider/blank.gif" data-src="http://placehold.it/1920x580" alt=""/>     
         
-         <!-- <img src="../masterslider/blank.gif" data-src="http://placehold.it/735x580" alt="" class="ms-layer"
+         <img src="../masterslider/blank.gif" data-src="http://placehold.it/735x580" alt="" class="ms-layer"
             style="bottom:0; right:30px"
             data-effect="bottom(72)"
             data-delay="0"
             data-duration="300"
-            data-type="image" -->
-		
-      <!--   
+            data-type="image"
+        />
+        
         <div class="ms-layer text1"
-        	style="left:116px; top:120px"
+            style="left:116px; top:120px"
             data-effect="bottom(50)"
             data-duration="900"
             data-delay="600"
             data-ease="easeOutExpo"
-        >Experienced <br /> Criminal <br /> Defense <br /> Lawyers </div> -->
+        >Making <br /> Your <br /> Priorities <br /> Ours</div>
           
-        <!-- <div class="ms-layer sldbut1"
-        	style="left:120px; top:466px"
+        <div class="ms-layer sldbut1"
+            style="left:120px; top:466px"
             data-effect="right(50)"
             data-duration="2000"
             data-delay="900"
             data-ease="easeOutExpo"
-        ><a href="#">Learn More</a></div> -->
+        ><a href="#">Learn More</a></div>
                 
-	</div><!-- end slide -->
+    </div> --><!-- end slide -->
      
-	
+    <!-- Video Slide -->
+<!--     <div class="ms-slide slide-video" data-delay="50">
+        <img src="masterslider/blank.gif" alt="" data-src="http://placehold.it/1920x580">
+        
+        <div class="ms-layer hps-vicapton-box"
+            style="left:361px; top:223px"
+            data-effect="bottom(150)"
+            data-duration="2800"
+            data-ease="easeOutExpo"
+        ></div>
+        
+        <h3 class="ms-layer hps-hd"
+            style="left: 378px; top:226px;"
+            data-delay="1800"
+            data-duration="2400"
+            data-effect="scale(1.05,1.05)"
+            data-ease="easeOutExpo"
+        >HD</h3>
+        
+        <h3 class="ms-layer hps-videotitle"
+            style="left: 595px; top:251px;"
+            data-delay="2000"
+            data-duration="3000"
+            data-ease="easeOutExpo"
+            data-effect="rotate3dright(0,20,0,0)" 
+        ><span style="font-weight:400">video</span> backgrounds</h3>
+        
+        <p class="ms-layer hps-videotext"
+            style="left: 596px; top:290px;"
+            data-delay="2200"
+            data-ease="easeOutExpo"
+            data-duration="1300"
+            data-effect="skewleft(-8,30)"
+        >
+        Now you can add high quality videos as slide background. It supports various video formats and looped videos.
+        </p>
+
+        <video data-autopause="false" data-mute="true" data-loop="true" data-fill-mode="fill">
+            <source id="mp4" src="images/sliders/master/video/video4.mp4" type="video/mp4"/>
+            <source id="webm" src="images/sliders/master/video/video.webm" type="video/webm"/>
+            <source id="ogv" src="images/sliders/master/video/video.ogv" type="video/ogg"/>
+        </video>
+        
+    </div> --><!-- end video slide -->
+    
     <!-- slide -->
-   	<!-- <div class="ms-slide slide-3" data-delay="7">
+    <!-- <div class="ms-slide slide-3" data-delay="7"> -->
          
-        slide background
-        <img src="images/sliders/master/lawbooks.jpg" alt=""/>     
-         -->
-         <!-- <img src="../masterslider/blank.gif" data-src="http://placehold.it/1024x580" alt="" class="ms-layer"
+        <!-- slide background -->
+        <!-- <img src="masterslider/blank.gif" data-src="http://placehold.it/1920x580" alt=""/>     
+        
+         <img src="../masterslider/blank.gif" data-src="http://placehold.it/1024x580" alt="" class="ms-layer"
             style="bottom:0; right:0px"
             data-effect="right(72)"
             data-delay="0"
             data-duration="300"
-            data-type="image" -->
-		
+            data-type="image"
+        />
         
-       <!--  <div class="ms-layer text1 small"
-        	style="left:116px; top:113px"
+        <div class="ms-layer text1 small"
+            style="left:116px; top:113px"
             data-effect="bottom(50)"
             data-duration="900"
             data-delay="600"
             data-ease="easeOutExpo"
-        >Get <br /> confidential <br /> legal advice</div> -->
+        >Get <br /> confidential <br /> legal advice</div>
         
-    <!--     <div class="ms-layer text2"
-        	style="left:116px; top:327px"
+        <div class="ms-layer text2"
+            style="left:116px; top:327px"
             data-effect="left(100)"
             data-duration="1600"
             data-delay="1100"
@@ -319,20 +388,20 @@ experienced attorneys.</div>
         >Get free information &amp; advice confidential on most legal issues.</div>
          
         <div class="ms-layer sldbut1"
-        	style="left:116px; top:445px"
+            style="left:116px; top:445px"
             data-effect="right(50)"
             data-duration="2000"
             data-delay="1300"
             data-ease="easeOutExpo"
         ><a href="#">Learn More</a></div>
                 
-	</div><!-- end slide -->
+    </div> --><!-- end slide -->
     
     <!-- slide -->
-   	<!-- <div class="ms-slide slide-4" data-delay="7"> -->
+   <!--  <div class="ms-slide slide-4" data-delay="7"> -->
          
         <!-- slide background -->
-       <!--  <img src="masterslider/blank.gif" data-src="http://placehold.it/1920x580" alt=""/>     
+        <!-- <img src="masterslider/blank.gif" data-src="http://placehold.it/1920x580" alt=""/>     
         
          <img src="../masterslider/blank.gif" data-src="http://placehold.it/730x580" alt="" class="ms-layer"
             style="bottom:0; right:0px"
@@ -340,10 +409,10 @@ experienced attorneys.</div>
             data-delay="0"
             data-duration="300"
             data-type="image"
-	
+        />
         
-        <!-- <div class="ms-layer text1 smalldark"
-        	style="left:116px; top:143px"
+        <div class="ms-layer text1 smalldark"
+            style="left:116px; top:143px"
             data-effect="bottom(50)"
             data-duration="900"
             data-delay="600"
@@ -351,30 +420,29 @@ experienced attorneys.</div>
         >Experienced <br /> Attorneys</div>
         
         <div class="ms-layer text2"
-        	style="left:116px; top:305px"
+            style="left:116px; top:305px"
             data-effect="left(100)"
             data-duration="2000"
             data-delay="900"
             data-ease="easeOutExpo"
         >Get immediate free information and advice confidential from the <br />
-experienced attorneys on most common legal issues.</div> -->
+experienced attorneys on most common legal issues.</div>
          
-        <!-- <div class="ms-layer sldbut1"
-        	style="left:116px; top:455px"
+        <div class="ms-layer sldbut1"
+            style="left:116px; top:455px"
             data-effect="right(50)"
             data-duration="2000"
             data-delay="900"
             data-ease="easeOutExpo"
-        ><a href="#">Learn More</a></div> -->
+        ><a href="#">Learn More</a></div>
                 
-	<!-- </div> -->
-    <!-- end slide -->
+    </div> --><!-- end slide -->
     
     <!-- slide -->
-  <!--  	<div class="ms-slide slide-5" data-delay="7"> -->
+  <!--   <div class="ms-slide slide-5" data-delay="7"> -->
          
         <!-- slide background -->
-       <!--  <img src="images/sliders/master/" alt=""/>     
+       <!--  <img src="masterslider/blank.gif" data-src="http://placehold.it/1920x580" alt=""/>     
         
          <div class="ms-layer video-box two imgframe1"
             style="right:115px;
@@ -384,62 +452,59 @@ experienced attorneys on most common legal issues.</div> -->
             data-duration="3000"
             data-ease="easeOutExpo"
             >
-            <iframe src="" allowfullscreen=""></iframe>
-
+                <iframe src="http://player.vimeo.com/video/49753231" allowfullscreen=""> </iframe>
         </div>
         
         <div class="ms-layer text1 small"
-        	style="left:116px; top:120px"
+            style="left:116px; top:120px"
             data-effect="bottom(50)"
             data-duration="900"
             data-delay="300"
             data-ease="easeOutExpo"
-        ></div>
+        >Responsive <br /> Multe Use</div>
         
         <div class="ms-layer text2"
-        	style="left:116px; top:282px"
+            style="left:116px; top:282px"
             data-effect="left(100)"
             data-duration="2000"
             data-delay="900"
             data-ease="easeOutExpo"
-        >Reliable and Trusted Criminal Defense Attorneys,<br />
- A Word from Lisa Wong, Herself.</div> -->
+        >Many web sites still infancy various versions have <br />
+over the years by sometimes on purpose.</div>
          
-        <!-- <div class="ms-layer sldbut1"
-        	style="left:116px; top:432px"
+        <div class="ms-layer sldbut1"
+            style="left:116px; top:432px"
             data-effect="right(50)"
             data-duration="2000"
             data-delay="900"
             data-ease="easeOutExpo"
-        ><a href="#">Learn More</a></div> -->
+        ><a href="#">Learn More</a></div>
                 
-	</div>
-    <!-- end slide -->
+    </div> --><!-- end slide -->
     
     <!-- slide -->
-   	<!-- <div class="ms-slide slide-6" data-delay="7"> -->
+   <!--  <div class="ms-slide slide-6" data-delay="7"> -->
          
         <!-- slide background -->
-        <!-- <img src="images/sliders/master/SDskyline2.png" alt=""/>     
+        <!-- <img src="masterslider/blank.gif" data-src="http://placehold.it/1920x580" alt=""/>     
                 
         <div class="ms-layer text1 center"
-        	style="left:270px; top:163px"
+            style="left:270px; top:163px"
             data-effect="bottom(50)"
             data-duration="500"
             data-delay="0"
             data-ease="easeOutExpo"
-        >Get <br /> Help <br /> Now!</div> -->
+        >You Want <br /> Legal Solutions <br /> ?</div>
           
-        <!-- <div class="ms-layer sldbut1"
-        	style="left:595px; top:435px"
+        <div class="ms-layer sldbut1"
+            style="left:595px; top:435px"
             data-effect="bottom(50)"
             data-duration="2000"
             data-delay="600"
             data-ease="easeOutExpo"
         ><a href="#">Get Help Now!</a></div>
                 
-	</div> -->
-    <!-- end slide -->
+    </div> --><!-- end slide -->
     
 
 </div><!-- end of masterslider -->
@@ -453,11 +518,64 @@ experienced attorneys on most common legal issues.</div> -->
 
     <div class="title11">
     	<h2>Testimonials</h2>
+    
+    <div class="margin_top1"></div><div class="clearfix"></div>
+    
+    <div id="owl-demo2" class="owl-carousel">
+    
+        <div><h4><i>"Throughout the process, Lisa did a fantastic job of clearly answering my questions; no roundabout explanations or legalese of which I had no understanding. She was even so kind as to offer a bit of advice regarding a side matter that had come up in my life. When it came to negotiating the final plea, she came up with a creative solution to please the courts and myself." --M.W. 2/21/14</i></h4><br/></div>
         
-        <span class="line"></span></h2>
-	</div>
-	<br/>
-    <h4>"Lisa genuinely cares about how I felt during the process. She is very smart and understanding. She is great at following up with any concerns that I had with a sincere sense of urgency since she got the case. I recommend her to anyone who needs her services plus her prices are very reasonable.” – Lauren J.</h4>
+        <div><h4><i>"Lisa is a very intelligent attorney. She put in a lot of effort while researching my case and was able to create a solid argument against my d-bag landlord. I’m still waiting to see how the case will pan out, but she’s done such a great job so far it’s worthy of this review. Whatever the outcome, I believe she put together the best possible argument in my favor. She’s also very easy to work with and explains legalities well to someone with no legal mind or background (someone like me). I’ve had bad experiences with other lawyers, so I can compare/contrast with some education. I’m currently still paying for services that were supposed to take 6 months to complete. It’s been 2 years and 2 months. I wish I would have hired lisa back then!" -- M.E. 2/19/14 </i></h4></div>
+        
+        <div><h4><i>“I am continually impressed by Lisa’s ability to quickly grasp complex legal issues and easily explain them to her clients. I highly recommend Lisa to clients in need of strong representation." -- N.A 3/04/2014</i></h4></div>
+        
+        <div><h4><i>"Lisa genuinely cares about her clients’ well-being. She wants to see you succeed and will offer her helping hand in anyway she can. Hopefully I won’t need to utilize her services again anytime soon, but I know that she’s the first one I’ll call if I ever do!" -- M.W. 2/21/14</i></h4></div>
+
+        <div><h4><i>“Lisa Wong is warm, educated and very knowledgeable about the law. She helped my son get probation for a criminal offence that could have been 3 years in prison. He did not understand the gravity of what he was involved in and she explained everything. She went out of her way to remind him when items were due to the courts. She was very easy for him to contact, and if she was in court at the time he called, she contacted him within 2 hours. We are very grateful to Lisa for her help and guidance and I highly recommend her. She is a professional who can relate to all ages and explain at the level of understanding needed. Thank you very much Lisa!.” -- C. W. 1/22/14</i></h4></div>
+
+        <div><h4><i>“Lisa is an amazing attorney, she deserves not only five but six stars in my opinion! I was terrified, confused and confined in jail when I met Lisa, and she really helped clear things up for me. She also has incredibly abundant energy and a great personality. She’s very personable and will talk to you directly, and gets back to you immediately! I highly recommend Lisa.” -- M.C. 11/14/13</i></h4></div>
+
+        <div><h4><i>"Lisa was recommended to me by my best friends brother and friend of 14 years. He certainly followed through because Lisa is by far a top of the line attorney. Her level of knowledge and prompt professionalism is very rare anymore. She treats me like gold and I’m absolutely sure she will for you as well. couldn’t be more satisfied and would absolutely recommend her to anyone who deserves good legal service." -- T.M. 10/29/13</i></h4></div>
+
+        <div><h4><i>“Ms. Wong is the greatest combination of client focus, professionalism and value I’ve seen in a lawyer.” -- J.W.8/17/13</i></h4></div>
+
+        <div><h4><i>“This is an attorney who will go the extra mile! She is extremely helpful and informative. I have come to her with a number of family situations and she communicates well and educates me as to what the law is and also how to stay out of trouble! She was also really helpful with giving me advice about a friends DUI. I highly recommend her because her prices are very reasonable and you get quality representation and expertise from her.” -- R.J. 7/19/13</i></h4></div>
+
+        <div><h4><i>“Ms. Wong is a compassionate advocate who fiercely fights for her clients’ rights. She knows how to navigate the criminal justice system to obtain the best results for her clients. I fully recommend and endorse Ms. Wong.” -- A.K. 7/2013</i></h4></div>
+
+        <div><h4><i>“Lisa Wong is not only a wonderful attorney but a genuine person as well. She goes the extra mile to ensure you understand what is going on throughout the legal process and offers innovative and new ways to tackle whatever issue is presented. Lisa makes sure that you are her number one priority and is very quick to answer your questions. She doesn’t “waste” your time or money and works hard to ensure her clients are satisfied.” -- A.V. 6/27/13</i></h4></div>
+
+        <div><h4><i>“Lisa Wong, a great DUI attorney well my name is Terri Allen and I have a lawyer ,but he couldn’t show up for me so he sent her and she was great she was concerned and she is still in touch with me i recommend her to everyone ,she does this for the work she really does care about the client.” -- T.A. 5/23/13</i></h4></div>
+
+        <div><h4><i>“Lisa was recommended to me by another lawyer who practices a different area of law and recommended Lisa based on her experience and expertise. I had a traffic legal issue with the courts here in LA, and Lisa’s expertise went a long way in helping me close this case out successfully. If I had gone at it alone, I would have been much much worse off. Thank you, Lisa.” -- A.B. 3/26/13</i></h4></div>
+
+
+        <div><h4><i>“As an attorney who has had the pleasure of working with Lisa on a number of matters, I can say that she is an experienced and dedicated professional that goes above and beyond for her clients. Yelpers should feel secure in retaining Lisa Wong for their Criminal Defense needs because she has extensive experience and knowledge. With her history as a Public Defender, Lisa has worked with clients on a variety of matters and made a difference for many people. The Law Offices of Lisa Wong, did a great job with the matter which I associated on with them and I look forward to doing business with Lisa in the future. I highly recommend her to others.” -- S.V. 3/13/13</i></h4></div>
+
+        <div><h4><i>“Lisa Wong is an excellent lawyer. She was very professional but at the same time kept an open enough environment to where I can divulge embarrassing info without feeling judged. Her communication was always on time as well. I never had to ask what was going on with my case because she always in the loop and kept me inside as well. The greatest attribute to her service is that you speak directly to her. She takes the time as busy she may be to make her service personal. I really appreciate all that the Law Office of Lisa Wong did for me and I would recommend her to anyone going through tough legal matters.” -- M.N. 2/01/13</i></h4></div>
+
+        <div><h4><i>“Lisa is the best I called around was told a price I could never afford at the other guys. Lisa worked within my budget and was able to get my case settled. I am very happy with the results and I will refer Lisa always should I ever have a need for a lawyer Lisa is my first call. Thanks again Lisa your the Best!” -- D.H. 10/18/12</i></h4></div>
+
+        <div><h4><i>“Lisa is an excellent lawyer. She will fight for what she feels is right. She helped me understand the complexity of my case and provided, what I believe is, solid advice. Lisa was always prompt in providing updates on the status of my case. She worked with me all through out the way until the case was settled. What I appreciate most about Lisa is that she helped me get though the worst time in my life. Thank you, Lisa!” -- T.D. 8/25/12</i></h4></div>
+
+        <div><h4><i>“The best of the best!! She is a pitbull who really fights for her clients. I do not live in California, so she called me on a regular basis. I was more than impressed with her efforts! And, she refunded the unused portion of my deposit. Who would have guessed that there were honest lawyers still around.” -- S.C. 6/11/12</i></h4></div>
+
+        <div><h4><i>“Lisa is a warrior among warriors. I am a fellow lawyer in the community and have heard of of her reputation. She used to at the Riverside Public Defenders Office and was known as a fighter. She always has time to talk with her clients and is very accessible. You will not get a secretary or a run around. The phone goes straight to her. On top of that, I have hit Lisa up for advice on many occasions and she never comes short.” -- H.V. 3/15/12</i></h4></div>
+
+        <div><h4><i>“I endorse this lawyer. I’ve had the pleasure of attending a week long trial skills seminar with Lisa. Lisa is extremely intelligent and a very hard worker. She is very personable in nature but at the same time extremely aggressive in tackling legal issues and defending her clients. Lisa brought so much to the course we attended together. What a tremendous asset she is to our profession.” -- P.C. 2011</i></h4></div>
+
+        <div><h4><i>“Lisa is a very bright and diligent San Diego criminal defense attorney. I hope that it never happens, but if I ever had the need to retain a criminal defense attorney, I would not think twice about contacting Lisa Wong.” -- J.W. 2011</i></h4></div>
+
+         <div><h4><i>“I endorse this lawyer. She is a fighter and an excellent advocate! You are in good hands with Miss Wong!“ --S.A. 03/2013</i></h4></div>
+
+
+  </div>
+
+</div>
+
+
+    </div>
+
         
     <h5>Get your Free Consultation <strong class="animate" data-anim-type="fadeIn" data-anim-delay="300">(619) 363-1776</strong></h5>
     
@@ -488,12 +606,12 @@ experienced attorneys on most common legal issues.</div> -->
             <li class="cbp-item">
                 <a href="#" class="cbp-caption">
                     <div class="cbp-caption-defaultWrap">
-                        <img src="images/sliders/master/GrayBox.jpg" alt="">
+                        <img src="images/sliders/master/practiceareas/prostitution.png" alt="">
                     </div>
                     <div class="cbp-caption-activeWrap">
                         <div class="cbp-l-caption-alignLeft">
                             <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title"><i class="fa fa-briefcase"></i> <br /> <strong>Prostitution</strong></div>
+                                </br><div class="cbp-l-caption-title"> <br /> <strong>Prostitution</strong></div>
                             </div>
                         </div>
                     </div>
@@ -503,12 +621,12 @@ experienced attorneys on most common legal issues.</div> -->
             <li class="cbp-item">
                 <a href="#" class="cbp-caption">
                     <div class="cbp-caption-defaultWrap">
-                        <img src="images/sliders/master/GrayBox.jpg" alt="">
+                        <img src="images/sliders/master/practiceareas/dui.png" alt="">
                     </div>
                     <div class="cbp-caption-activeWrap">
                         <div class="cbp-l-caption-alignLeft">
                             <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title"><i class="fa fa-home"></i> <br /> <strong>DUI</strong></div>
+                                </br><div class="cbp-l-caption-title"><br /> <strong>DUI</strong></div>
                             </div>
                         </div>
                     </div>
@@ -518,12 +636,12 @@ experienced attorneys on most common legal issues.</div> -->
             <li class="cbp-item">
                 <a href="#" class="cbp-caption">
                     <div class="cbp-caption-defaultWrap">
-                        <img src="images/sliders/master/GrayBox.jpg" alt="">
+                        <img src="images/sliders/master/practiceareas/dv.png" alt="">
                     </div>
                     <div class="cbp-caption-activeWrap">
                         <div class="cbp-l-caption-alignLeft">
                             <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title"><i class="fa fa-medkit"></i> <br /> <strong>Domestic Violence</strong></div>
+                                </br><div class="cbp-l-caption-title"><br /> <strong>Domestic Violence</strong></div>
                             </div>
                         </div>
                     </div>
@@ -533,12 +651,12 @@ experienced attorneys on most common legal issues.</div> -->
             <li class="cbp-item">
                 <a href="#" class="cbp-caption">
                     <div class="cbp-caption-defaultWrap">
-                        <img src="images/sliders/master/GrayBox.jpg" alt="">
+                        <img src="images/sliders/master/practiceareas/theft.png" alt="">
                     </div>
                     <div class="cbp-caption-activeWrap">
                         <div class="cbp-l-caption-alignLeft">
                             <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title"><i class="fa fa-car"></i> <br /> <strong>Theft Charges</strong></div>
+                                </br><div class="cbp-l-caption-title"><br /> <strong>Theft Charges</strong></div>
                             </div>
                         </div>
                     </div>
@@ -548,12 +666,12 @@ experienced attorneys on most common legal issues.</div> -->
             <li class="cbp-item">
                 <a href="#" class="cbp-caption">
                     <div class="cbp-caption-defaultWrap">
-                        <img src="images/sliders/master/GrayBox.jpg" alt="">
+                        <img src="images/sliders/master/practiceareas/drug.png" alt="">
                     </div>
                     <div class="cbp-caption-activeWrap">
                         <div class="cbp-l-caption-alignLeft">
                             <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title"><i class="fa fa-users"></i> <br /> <strong>Drug Charges</strong></div>
+                                </br><div class="cbp-l-caption-title"> <br /> <strong>Drug Charges</strong></div>
                             </div>
                         </div>
                     </div>
@@ -563,12 +681,12 @@ experienced attorneys on most common legal issues.</div> -->
             <li class="cbp-item">
                 <a href="#" class="cbp-caption">
                     <div class="cbp-caption-defaultWrap">
-                        <img src="images/sliders/master/GrayBox.jpg" alt="">
+                        <img src="images/sliders/master/practiceareas/expunge.png" alt="">
                     </div>
                     <div class="cbp-caption-activeWrap">
                         <div class="cbp-l-caption-alignLeft">
                             <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title"><i class="fa fa-edit"></i> <br /> <strong>Expungement</strong></div>
+                                </br><div class="cbp-l-caption-title"><br /> <strong>Expungement</strong></div>
                             </div>
                         </div>
                     </div>
@@ -578,12 +696,12 @@ experienced attorneys on most common legal issues.</div> -->
             <li class="cbp-item">
                 <a href="#" class="cbp-caption">
                     <div class="cbp-caption-defaultWrap">
-                        <img src="images/sliders/master/GrayBox.jpg" alt="">
+                        <img src="images/sliders/master/practiceareas/assault.png" alt="">
                     </div>
                     <div class="cbp-caption-activeWrap">
                         <div class="cbp-l-caption-alignLeft">
                             <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title"><i class="fa fa-money"></i> <br /> <strong>Assault & Battery</strong></div>
+                                </br><div class="cbp-l-caption-title"><br /> <strong>Assault & Battery</strong></div>
                             </div>
                         </div>
                     </div>
@@ -593,19 +711,17 @@ experienced attorneys on most common legal issues.</div> -->
             <li class="cbp-item">
                 <a href="#" class="cbp-caption">
                     <div class="cbp-caption-defaultWrap">
-                        <img src="images/sliders/master/GrayBox.jpg" alt="">
+                        <img src="images/sliders/master/practiceareas/court.png" alt="">
                     </div>
                     <div class="cbp-caption-activeWrap">
                         <div class="cbp-l-caption-alignLeft">
                             <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title"><i class="fa fa-university"></i> <br /> <strong>Restraining Order</strong></div>
+                                </br><div class="cbp-l-caption-title"><br /> <strong>Restraining Order</strong></div>
                             </div>
                         </div>
                     </div>
                 </a>
             </li><!-- end item -->
-               
-
 
         </ul>
     </div>
@@ -617,492 +733,65 @@ experienced attorneys on most common legal issues.</div> -->
 </div>
 </div><!-- end features section 2 -->
 
-<!-- div class="clearfix"></div>
-
-<div class="feature_sec5">
-<div class="container">
-	
-	<div class="two_third">
-    
-    	<img src="http://placehold.it/380x480" alt="" class="img_left1 animate" data-anim-type="fadeInRight" data-anim-delay="500" />
-    	
-        <h2 class="small">About <strong>Me</strong></h2> -->
-        
-       <!--  <p>Long established fact that a reader will be distracted by the readable <strong>content of a page when</strong> looking at layout The point of using is has a more less of letters.</p>
-		<br />
-		<p>As opposed to using content here content here making it look like readable English. <strong>Many desktop publishing packages and web page editors now use the Lorem</strong> Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by sometimes packages on purpose.</p>
-        <br />
-        <span class="big_text1">Call Us Confidentially Now:</span> &nbsp;<span class="big_text1 color">(619) 363-1776</span>
-        <br /><br />
-        <div class="alicent"><img src="images/h-line10.png" alt="" /> <br /><br /> <div class="scriptfont">Chirs Nicholas</div></div>
-
-	</div><!-- end section -->
-	
-    <!-- <div class="one_third last animate" data-anim-type="fadeIn" data-anim-delay="200">
-    
-    	<h2 class="small">Case <strong>Results</strong></h2>
-        
-        <div class="caseresult">
-        	<div class="inborder">
-            
-            <p><span class="big_text1">$4.9 billion</span> in verdicts and settlements over 35 years. Does not reflect adjustments for fees, costs, or medical liens.</p>
-            
-        	<div class="divider_line22"></div> -->
-            
-            <!-- <p><span class="big_text1">$1 Million</span> Settlement; School Student Suffers Brain Injury in Truck-Auto Crash.</p>
-            
-            <div class="divider_line22"></div>
-            
-            <p><span class="big_text1">$3.75 Million</span> Undue Influence to Disabled Woman in her Estate Trust Decisions Results in Settlement.</p>
-            
-            <br /><br /> -->
-            
-           <!--  <a href="#" class="button4"><strong>All Cases &amp; Results</strong></a>
-            
-            </div>
-		</div>
-
-	</div>
-
- </div>
-</div> --><!-- end features section 5 -->
-
-<!-- <div class="clearfix"></div>
-
-<div class="feature_sec6">
-<div class="container">
-	
-    <div class="title11">
-    	<h2 class="white">Recent <strong>Legal Articles</strong>
-        <span class="line3"></span></h2>
-	</div>
-    
-    <br />
-    
-    <div class="one_third animate" data-anim-type="fadeInLeft" data-anim-delay="300">
-    	
-        <img src="http://placehold.it/70x70" alt="" />
-        
-        <a href="#">Lorem Ipsum as their default</a>
-
-		<p>Model text and a search for  lorem ipsum cover many web sites.</p>
-         
-    </div> --><!-- end section -->
-    
-	<!-- <div class="one_third animate" data-anim-type="fadeInUp" data-anim-delay="300">
-    	
-        <img src="http://placehold.it/70x70" alt="" />
-        
-        <a href="#">Containing Ipsum passages</a>
-
-		<p>Model text and a search for  lorem ipsum cover many web sites.</p>
-         
-    </div> --><!-- end section -->
-    
-    <!-- <div class="one_third last animate" data-anim-type="fadeInRight" data-anim-delay="300">
-    	
-        <img src="http://placehold.it/70x70" alt="" />
-        
-        <a href="#">Type the specimen book</a>
-
-		<p>Model text and a search for  lorem ipsum cover many web sites.</p>
-         
-    </div> --><!-- end section -->
-    
-    <!-- <div class="clearfix margin_top5"></div>
-    
-    <div class="one_third animate" data-anim-type="fadeInLeft" data-anim-delay="300">
-    	
-        <img src="http://placehold.it/70x70" alt="" />
-        
-        <a href="#">Notrepeat predefine chunks</a>
-
-		<p>Model text and a search for  lorem ipsum cover many web sites.</p>
-         
-    </div> --><!-- end section -->
-    
-	<!-- <div class="one_third animate" data-anim-type="fadeInUp" data-anim-delay="300">
-    	
-        <img src="http://placehold.it/70x70" alt="" />
-        
-        <a href="#">Lpsum is therefore always</a>
-
-		<p>Model text and a search for  lorem ipsum cover many web sites.</p>
-         
-    </div> --><!-- end section -->
-    
-    <!-- <div class="one_third last animate" data-anim-type="fadeInRight" data-anim-delay="300">
-    	
-        <img src="http://placehold.it/70x70" alt="" />
-        
-        <a href="#">Evolved here over the years</a>
-
-		<p>Model text and a search for  lorem ipsum cover many web sites.</p>
-         
-    </div> --><!-- end section -->
-
-<!-- </div>
-</div> --><!-- end features section 6 -->
-
-<!-- <div class="clearfix"></div>
-
-<div class="feature_sec7">
-<div class="container">
-	
-	<div class="title11">
-    	<h2>Meet our <strong>Team</strong>
-        <span class="line4"></span></h2>
-	</div>
-    
-    <br /> -->
-    
-    <!-- div class="one_fourth animate" data-anim-type="fadeInUp" data-anim-delay="300">
-    	
-        <img src="http://placehold.it/190x190" alt="" class="cirimg" />
-        
-        <div class="cinfo">
-        	
-            <img src="images/shape1.jpg" alt="" class="shape1" />
-            
-        	<h5>Alex Jacobson</h5>
-			<em>Founder and Manager</em>
-            <b>Practice Areas:</b>
-            Corporate and Securities<br /> -->
-            <!-- Commercial Lending,<br />
-            Real Estate<br />
-
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-google-plus"></i></a>
-            <br />
-            <a href="attorneys-fullbio.html" class="button1">Read Full Bio</a>
-                 
-        </div> -->
-	
-    <!-- </div> --><!-- end section -->
-    
-    <!-- <div class="one_fourth animate" data-anim-type="fadeInUp" data-anim-delay="400">
-    	
-        <img src="http://placehold.it/190x190" alt="" class="cirimg" />
-        
-        <div class="cinfo">
-        	
-            <img src="images/shape1.jpg" alt="" class="shape1" />
-            
-        	<h5>Marcos Heriberto</h5>
-			<em>Partner</em>
-            <b>Practice Areas:</b>
-            Corporate and Securities<br />
-            Commercial Lending,<br />
-            Real Estate<br /> -->
-
-           <!--  <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-google-plus"></i></a>
-            <br />
-            <a href="attorneys-fullbio.html" class="button1">Read Full Bio</a>
-                 
-        </div>
-        
-    </div><!-- end section -->
-    
-    <!-- <div class="one_fourth animate" data-anim-type="fadeInUp" data-anim-delay="500">
-    	
-        <img src="http://placehold.it/190x190" alt="" class="cirimg" />
-        
-    	<div class="cinfo"> -->
-        	
-            <!-- <img src="images/shape1.jpg" alt="" class="shape1" />
-            
-        	<h5>Alana Desiree</h5>
-			<em>Counsel</em> -->
-            <!-- <b>Practice Areas:</b>
-            Corporate and Securities<br />
-            Commercial Lending,<br />
-            Real Estate<br /> --> 
-
-           <!--  <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-google-plus"></i></a>
-            <br />
-            <a href="attorneys-fullbio.html" class="button1">Read Full Bio</a> -->
-                 
-       <!--  </div> -->
-        
-   <!--  </div> --><!-- end section -->
-    
-    <!-- <div class="one_fourth last animate" data-anim-type="fadeInUp" data-anim-delay="600">
-    	
-        <img src="http://placehold.it/190x190" alt="" class="cirimg" />
-        
-    	<div class="cinfo">
-        	
-            <img src="images/shape2.jpg" alt="" class="shape1" />
-            
-        	<h5>Kiley Felicity</h5>
-			<em>Associate</em>
-            <b>Practice Areas:</b>
-            Corporate and Securities<br />
-            Commercial Lending,<br />
-            Real Estate<br /> -->
-
-           <!--  <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-google-plus"></i></a>
-            <br />
-            <a href="attorneys-fullbio.html" class="button1">Read Full Bio</a>
-                 
-        </div>
-        
-    </div> --><!-- end section -->
-    
-
-<!-- </div>
-</div> --><!-- end features section 7 -->
-
-<!-- <div class="clearfix"></div>
-
-<div class="feature_sec18">
-<div class="container">
-	
-    <div class="box animate" data-anim-type="fadeInUp" data-anim-delay="500">
-    
-        <h1>Your</h1>
-        <h3>personal legal advisor</h3>
-        <h5>27 years of experience ---</h5> -->
-        
-        <!-- <p>We provide a personal and professional service Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy generators on the Internet tend to repeat predefined chunks as necessary making this the first true generator on the Internet various versions have evolved over the years.</p>
-        
-	</div> -->
-
-<!-- </div>
-</div> --><!-- end features section 18 -->
-
-<!-- <div class="clearfix"></div>
-
-<div class="feature_sec8">
-<div class="container">
-	
-    <div class="one_half">
-    	
-        <h2 class="small2">Recent <strong>Blogs</strong></h2>
-        
-    	<div id="owl-demo4" class="owl-carousel small two">
-    
-            <div> -->
-            
-            	<!-- <div class="left">
-                	<a href="#"><img src="http://placehold.it/100x100" alt="" /></a>
-                    <div class="date"><a href="#"><strong>27</strong> NOV</a></div>
-                    <div class="comment"><a href="#"><i class="fa fa-comments fa-2x"></i>&nbsp; 257</a></div>
-				</div> --><!-- end left -->
-                
-                <!-- <div class="right">
-					<div class="big_text2"><a href="#">There are many variations passages desktop lorem Ipsum available.</a></div>
-					<br />
-					<p>But the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet to repeat predefined chunks as necessary, making this the first true generator on the normal distribution Internet.</p>
-				</div> --><!-- end right -->
-                
-			</div><!-- end section -->
-            
-            <!-- <div>
-            
-            	<div class="left">
-                	<a href="#"><img src="http://placehold.it/100x100" alt="" /></a>
-                    <div class="date"><a href="#"><strong>26</strong> NOV</a></div>
-                    <div class="comment"><a href="#"><i class="fa fa-comments fa-2x"></i>&nbsp; 158</a></div>
-				</div> --><!-- end left -->
-                
-                <!-- <div class="right">
-					<div class="big_text2"><a href="#">Many web sites still in their infancy versions have evolved over the years.</a></div>
-					<br />
-					<p>But the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet to repeat predefined chunks as necessary, making this the first true generator on the normal distribution Internet.</p>
-				</div> --><!-- end right -->
-                
-			</div><!-- end section -->
-            
-            <!-- <div>
-            
-            	<div class="left">
-                	<a href="#"><img src="http://placehold.it/100x100" alt="" /></a>
-                    <div class="date"><a href="#"><strong>25</strong> NOV</a></div>
-                    <div class="comment"><a href="#"><i class="fa fa-comments fa-2x"></i>&nbsp; 450</a></div>
-				</div> --><!-- end left -->
-                
-                <!-- <div class="right">
-					<div class="big_text2"><a href="#">Publishing packages and web page editors now use as their default model text.</a></div>
-					<br />
-					<p>But the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet to repeat predefined chunks as necessary, making this the first true generator on the normal distribution Internet.</p>
-				</div> --><!-- end right -->
-                
-			</div><!-- end section -->
-            
-           <!--  <div>
-            
-            	<div class="left">
-                	<a href="#"><img src="http://placehold.it/100x100" alt="" /></a>
-                    <div class="date"><a href="#"><strong>24</strong> NOV</a></div>
-                    <div class="comment"><a href="#"><i class="fa fa-comments fa-2x"></i>&nbsp; 106</a></div>
-				</div> --><!-- end left -->
-                
-                <!-- <div class="right">
-					<div class="big_text2"><a href="#">Generate lorem the which looks reasonable lorem ipsum therefore always free.</a></div>
-					<br />
-					<p>But the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet to repeat predefined chunks as necessary, making this the first true generator on the normal distribution Internet.</p>
-				</div> --><!-- end right -->
-                
-			</div><!-- end section -->
-
-   		</div>
-
-	</div><!-- end all section -->
-    
-   <!--  <div class="one_half last">
-    	
-        <h2 class="small2">Our <strong>Videos</strong></h2>
-        
-        <div id="owl-demo5" class="owl-carousel small two">
-        	
-        	<div><iframe src="http://www.youtube.com/embed/03M7n8bMscM?wmode=transparent" class="videofra"></iframe></div>
-            
-            <div><iframe src="http://www.youtube.com/embed/pH7cvIiuRg8?wmode=transparent" class="videofra"></iframe></div>
-            
-            <div><iframe src="http://www.youtube.com/embed/VT_3xtI2kvM?wmode=transparent" class="videofra"></iframe></div>
-             -->
-            <!-- <div><iframe src="http://www.youtube.com/embed/R55e-uHQna0?wmode=transparent" class="videofra"></iframe></div>
-              -->
-        </div><!-- end section -->
-        
-    </div><!-- end all section -->
-
-</div>
-</div><!-- end features section 8 -->
-
-<!-- <div class="clearfix"></div>
-
-<div class="feature_sec19">
-<div class="container">
-
-	<ul>
-    	<li class="animate" data-anim-type="fadeIn" data-anim-delay="200"><img src="http://placehold.it/200x64" alt="" /></li>
-        <li class="animate" data-anim-type="fadeIn" data-anim-delay="300"><img src="http://placehold.it/200x64" alt="" /></li>
-        <li class="animate" data-anim-type="fadeIn" data-anim-delay="400"><img src="http://placehold.it/200x64" alt="" /></li>
-        <li class="animate" data-anim-type="fadeIn" data-anim-delay="500"><img src="http://placehold.it/200x64" alt="" /></li>
-        <li class="animate" data-anim-type="fadeIn" data-anim-delay="600"><img src="http://placehold.it/200x64" alt="" /></li>
-    </ul> -->
-    
-
 </div>
 </div><!-- end features section 19 -->
 
+
+
+
+
 <div class="clearfix"></div>
-
-
-<div class="full_biohead">
+    
+<div class="feature_sec17">
 <div class="container">
+    <h2><center>Attorneys</center></h2>
+    <div class="one_half">
+    
+        <div class="box">
+            
+            <div class="carea">
 
-    <img src="images/sliders/master/page.png" alt="" />
-    
-    <h3>Page</h3>
-    <h5>Attorney Randall T. Page</h5>
-    <!-- <h6>Founder and Managing Partner</h6> -->
-    
-    
-    <p class="big_text3">Established fact that a reader will be distracted by the readable content of a page when looking at its layout. <strong class="color2 sb">The point of using Lorem Ipsum</strong> is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose.</p>
-
-    <p class="big_text3">Established fact that a reader will be distracted by the readable content of a page when looking at its layout. <strong class="color2 sb">The point of using Lorem Ipsum</strong> is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose.</p>
-     <!-- <h6>Practice Areas</h6>
+                <h5><strong>Randall T. Page</strong></h5>
+                <em>CoFounder &amp; Attorney</em>
+                
+                <p>Letraset sheets contain lorem Ipsum passages more recently with desktop publishing software like versions.Letraset sheets contain lorem Ipsum passages more recently with desktop publishing software like versions.Letraset sheets contain </p>
+                
+               <!--  <a href="attorneys-fullbio.html" class="button5"><strong>Read Full BIO</strong></a> -->
+                
+            </div>
+            
+            <img src="images/sliders/master/attorney3.png" alt="" />
         
-        <ul>
-            <li><i class="fa fa-arrow-circle-o-right"></i> <a href="#">Drunk Driving Accidents</a></li>
-            <li><i class="fa fa-arrow-circle-o-right"></i> <a href="#">Industrial Accidents</a></li>
-            <li><i class="fa fa-arrow-circle-o-right"></i> <a href="#">Maritime and Jones Act Claims</a></li>
-            <li><i class="fa fa-arrow-circle-o-right"></i> <a href="#">Nursing Home Neglect</a></li>
-            <li><i class="fa fa-arrow-circle-o-right"></i> <a href="#">Products Liability</a></li>
-            <li><i class="fa fa-arrow-circle-o-right"></i> <a href="#">Qui Tam and Whistleblower Actions</a></li>
-            <li><i class="fa fa-arrow-circle-o-right"></i> <a href="#">Trucking Accidents</a></li>
-            <li><i class="fa fa-arrow-circle-o-right"></i> <a href="#">Workplace Injuries</a></li>
-        </ul> -->
+        </div>
     
+    </div><!-- end section -->
+    
+    <div class="one_half last">
+    
+        <div class="box">
+            
+            <div class="carea">
+            
+                <h5><strong>Lisa Wong</strong></h5>
+                <em>CoFounder &amp; Attorney</em>
+                
+                <p>Letraset sheets contain lorem Ipsum passages more recently with desktop publishing software like versions.Letraset sheets contain lorem Ipsum passages more recently with desktop publishing software like versions.Letraset sheets contain</p>
+                
+                <!-- <a href="attorneys-fullbio.html" class="button5"><strong>Read Full BIO</strong></a> -->
+                
+            </div>
+            
+            <img src="images/sliders/master/Lisa3.png" alt="" />
+        
+        </div>
+    
+    </div><!-- end section -->
+    
+
 </div>
 </div><!-- end full info head -->
 
 
-<div class="full_biohead">
-<div class="container">
-
-    <img src="images/sliders/master/Lisa.png" alt="" />
-    
-    <h3>Page</h3>
-    <h5>Attorney Lisa Wong</h5>
-    
-    <p class="big_text3">Established fact that a reader will be distracted by the readable content of a page when looking at its layout. <strong class="color2 sb">The point of using Lorem Ipsum</strong> is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose.</p>
-    <p class="big_text3">Established fact that a reader will be distracted by the readable content of a page when looking at its layout. <strong class="color2 sb">The point of using Lorem Ipsum</strong> is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose.</p>
-    
-</div>
-</div><!-- end full info head -->
-
-
-
-
-<div class="feature_sec9">
-<div class="container transpef">
-	
-    <div class="title11">
-    	<h2 class="white">Need Legal Assistance - Do You Have a Claim?
-        <em>Feel free to get in touch with any enquiries and one of our friendly members of staff will get back to you as soon as possible.</em>
-        </h2>
-	</div>
-    
-    <div class="cforms animate" data-anim-type="fadeIn" data-anim-delay="500">
-        
-        <form action="demo-contacts.php" method="post" id="sky-form" class="sky-form">
-          <fieldset>
-            <div class="row">
-            
-              <div class="col col-4">
-                <label class="label"><strong>Your Name*</strong></label>
-                <label class="input"> <i class="icon-append icon-user"></i>
-                  <input type="text" name="name" id="name">
-                </label>
-              </div>
-              
-              <div class="col col-4">
-                <label class="label"><strong>Your E-mail*</strong></label>
-                <label class="input"> <i class="icon-append icon-envelope-alt"></i>
-                  <input type="email" name="email" id="email">
-                </label>
-              </div>
-            
-                        
-            <div class="col col-4">
-              <label class="label"><strong>Phone Number</strong></label>
-              <label class="input"> <i class="icon-append icon-tag"></i>
-                <input type="text" name="subject" id="subject">
-              </label>
-            </div>
-            
-            </div>
-  			
-            <br />
-             
-            <div>
-              <label class="label"><strong>Message*</strong></label>
-              <label class="textarea"> <i class="icon-append icon-comment"></i>
-                <textarea rows="5" name="message" id="message"></textarea>
-              </label>
-            </div>
-            
-          </fieldset>
-          <footer>
-            <button type="submit" class="subbutton">Submit Your Message</button>
-          </footer>
-          <div class="message"> <i class="icon-ok"></i>
-            <p>Your message was successfully sent!</p>
-          </div>
-        </form>
-        
-	</div>
     
 	<div class="clearfix margin_top4"></div>
     
@@ -1215,6 +904,10 @@ experienced attorneys on most common legal issues.</div> -->
 <script type="text/javascript" src="js/mainmenu/sticky.js"></script>
 <script type="text/javascript" src="js/mainmenu/modernizr.custom.75180.js"></script>
 
+<!-- Accordion-->
+<script type="text/javascript" src="js/accordion/jquery.accordion.js"></script>
+<script type="text/javascript" src="js/accordion/jquery.easing.1.3.js"></script>
+
 <!-- forms -->
 <script src="js/form/jquery.form.min.js"></script>
 <script src="js/form/jquery.validate.min.js"></script>
@@ -1293,6 +986,30 @@ experienced attorneys on most common legal issues.</div> -->
 
 <!-- owl carousel -->
 <script src="js/carouselowl/owl.carousel.js"></script>
+
+<!-- it works the same with all jquery version from 1.x to 2.x -->
+<script src="jquery.min.js"></script>
+<script src="jssor.slider.mini.js"></script>
+<script>
+    jQuery(document).ready(function ($) {
+        //Define an array of slideshow transition code
+        var _SlideshowTransitions = [
+        { code1 },
+        { code2 },
+        { code3 }
+        ];
+        var options = {
+            $AutoPlay: true,
+            $SlideshowOptions: {
+                    $Class: $JssorSlideshowRunner$,
+                    $Transitions: _SlideshowTransitions,
+                    $TransitionsOrder: 1,
+                    $ShowLink: true
+                }
+        };
+        var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+    });
+</script>
 
 <!-- tabs -->
 <script src="js/tabs/assets/js/responsive-tabs.min.js" type="text/javascript"></script>

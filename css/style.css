@@ -39,6 +39,24 @@
 /*----------------------------------------------------
 	SITE MAIN STRUCTURE
 ------------------------------------------------------*/
+#slideshow { 
+    position: relative; 
+  	width: 1285px;
+	height: 175px; 
+    padding: 10px; 
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+    front: 'Droid Serif', serif;
+
+}
+
 
 .site_wrapper {
 	width: 100%;
@@ -155,12 +173,12 @@
 #trueHeader #logo{
 	float:left;
 	display:block;
-	width:100%;
-	min-height: 58px;
+	width:102%;
+	min-height: 89px;
 	margin-top:0px;
 	position: relative;
 	text-indent:-999em;
-	background:url(../images/logo.png) no-repeat center top;
+	background:url(../images/sliders/master/LisaWong4.png) no-repeat center top;
 }
 
 #topHeader #logo{
@@ -171,18 +189,18 @@
 	margin-top:0px;
 	position: relative;
 	text-indent:-999em;
-	background:url(../images/logo2.png) no-repeat center top;
+	background:url(../images/sliders/master/LisaWong4.png) no-repeat center top;
 }
 
 #topHeader #logo3{
 	float:left;
 	display:block;
 	width:100%;
-	min-height: 58px;
+	min-height: 90px;
 	margin-top:0px;
 	position: relative;
 	text-indent:-999em;
-	background:url(../images/logo.png) no-repeat left top;
+	background:url(../images/sliders/master/LisaWong4.png) no-repeat left top;
 }
 
 #trueHeader #logo4{
@@ -1501,6 +1519,22 @@
 }
 
 /* full info of bio page */
+
+.bio_text {
+	padding: 0;
+    height: 100px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0,0,0,.15);
+    background-color: white;
+    font-size: 14px;
+    margin-left: 365px;
+    margin-right: 480px;
+
+}
+
 .full_biohead {
 	float: left;
 	width: 100%;
