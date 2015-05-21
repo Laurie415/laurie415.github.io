@@ -41,17 +41,15 @@
 ------------------------------------------------------*/
 #slideshow { 
     position: relative; 
-  	width: 1285px;
+  	width: 1275px;
 	height: 175px; 
-    padding: 10px; 
-	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+	box-shadow: 0 0 0px rgba(0,0,0,0.4);
 }
 
 #slideshow > div { 
     position: absolute; 
     top: 10px; 
-    left: 10px; 
-    right: 10px; 
+    right: 100px; 
     bottom: 10px; 
     front: 'Droid Serif', serif;
 
@@ -219,8 +217,8 @@
 .top_nav {
 	float: left;
 	width: 100%;
-	padding: 9px 0px;
-	background: #f3f3f3;
+	padding: 0px 0px;
+	background: FFFFFF;
 	border-bottom: 1px dashed #e9e9e9;
 }
 

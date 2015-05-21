@@ -74,6 +74,24 @@
     
 <script src="js/jquery.min.js"></script>
     
+<script>
+        $(function() {
+
+            $("#slideshow > div:gt(0)").hide();
+
+            setInterval(function() {
+              $('#slideshow > div:first')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slideshow');
+            },  10000);
+
+        });
+    </script>
+
+
        <!-- mega menu -->
     <link href="js/mainmenu/bootstrap.min.css" rel="stylesheet">
     <link href="js/mainmenu/menu.css" rel="stylesheet">
@@ -111,10 +129,10 @@
     
     <div class="wrapper">
          
-        <div class="top_nav">
-        <div class="container">
+       <div class="top_nav"> 
+       <div class="container"> 
             
-            <div class="left">
+            <!-- <div class="right">
             
                 <ul class="topsocial">
                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -124,23 +142,13 @@
                     <li><a href="#"><i class="fa fa-rss"></i></a></li>
                 </ul>
             
-            </div><!-- end left links -->
+            </div> --><!-- end left links
             
-            <div class="right">
+            <!-- <div class="right">
                 
                 Call Us: <strong>(619) 363-1776</strong>       Email: <a href="mailto:lisa@pagewong.com">Lisa@pagewong.com</a>
-                
-            <div class="topsitesearch">
-                <form method="get" id="topsitesearchform" action="index.html">
-                    <div>
-                    <input class="input-text" name="s" id="s" value="Search..." onFocus="if (this.value == 'Search...') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Search...';}" type="text" />
-                    <input id="searchsubmit" value="Search" type="submit" />
-                    </div>
-                </form>
-            </div><!-- end site search -->
             
-            
-        </div><!-- end right links -->
+        </div> --><!-- end right links -->
         
         </div>
         </div>
@@ -210,12 +218,8 @@
             </ul> -->
         </li>
         
-        <li class="dropdown yamm-fw"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Features</a>
+        <li class="dropdown yamm-fw"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Testimonials</a>
         
-        
-        <li class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Blog </a>
-       
-        </li>
         
         <li class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Contact </a>
         
@@ -521,67 +525,108 @@ over the years by sometimes on purpose.</div>
     
     <div class="margin_top1"></div><div class="clearfix"></div>
     
-    <div id="owl-demo2" class="owl-carousel">
-    
-        <div><h4><i>"Throughout the process, Lisa did a fantastic job of clearly answering my questions; no roundabout explanations or legalese of which I had no understanding. She was even so kind as to offer a bit of advice regarding a side matter that had come up in my life. When it came to negotiating the final plea, she came up with a creative solution to please the courts and myself." --M.W. 2/21/14</i></h4><br/></div>
-        
-        <div><h4><i>"Lisa is a very intelligent attorney. She put in a lot of effort while researching my case and was able to create a solid argument against my d-bag landlord. I’m still waiting to see how the case will pan out, but she’s done such a great job so far it’s worthy of this review. Whatever the outcome, I believe she put together the best possible argument in my favor. She’s also very easy to work with and explains legalities well to someone with no legal mind or background (someone like me). I’ve had bad experiences with other lawyers, so I can compare/contrast with some education. I’m currently still paying for services that were supposed to take 6 months to complete. It’s been 2 years and 2 months. I wish I would have hired lisa back then!" -- M.E. 2/19/14 </i></h4></div>
-        
-        <div><h4><i>“I am continually impressed by Lisa’s ability to quickly grasp complex legal issues and easily explain them to her clients. I highly recommend Lisa to clients in need of strong representation." -- N.A 3/04/2014</i></h4></div>
-        
-        <div><h4><i>"Lisa genuinely cares about her clients’ well-being. She wants to see you succeed and will offer her helping hand in anyway she can. Hopefully I won’t need to utilize her services again anytime soon, but I know that she’s the first one I’ll call if I ever do!" -- M.W. 2/21/14</i></h4></div>
+<!--         NOT MOBILE FRIENDLY SLIDE SHOW STARTS-->
 
-        <div><h4><i>“Lisa Wong is warm, educated and very knowledgeable about the law. She helped my son get probation for a criminal offence that could have been 3 years in prison. He did not understand the gravity of what he was involved in and she explained everything. She went out of her way to remind him when items were due to the courts. She was very easy for him to contact, and if she was in court at the time he called, she contacted him within 2 hours. We are very grateful to Lisa for her help and guidance and I highly recommend her. She is a professional who can relate to all ages and explain at the level of understanding needed. Thank you very much Lisa!.” -- C. W. 1/22/14</i></h4></div>
+        <div id="slideshow">
+       <div>
+                <center><p>"Throughout the process, Lisa did a fantastic job of clearly answering my questions; no roundabout explanations or legalese of which I had no understanding. She was even so kind as to offer a bit of advice regarding a side matter that had come up in my life. When it came to negotiating the final plea, she came up with a creative solution to please the courts and myself." --M.W. 2/21/14 
+               </p></center>
 
-        <div><h4><i>“Lisa is an amazing attorney, she deserves not only five but six stars in my opinion! I was terrified, confused and confined in jail when I met Lisa, and she really helped clear things up for me. She also has incredibly abundant energy and a great personality. She’s very personable and will talk to you directly, and gets back to you immediately! I highly recommend Lisa.” -- M.C. 11/14/13</i></h4></div>
+       </div>
+       <div>
+                <p>"Lisa is a very intelligent attorney. She put in a lot of effort while researching my case and was able to create a solid argument against my d-bag landlord. She’s also very easy to work with and explains legalities well to someone with no legal mind or background (someone like me). I’ve had bad experiences with other lawyers, so I can compare/contrast with some education. I’m currently still paying for services that were supposed to take 6 months to complete. It’s been 2 years and 2 months. I wish I would have hired Lisa back then!" -- M.E. 2/19/14 
+                </p>
+       </div>
+       <div>
+                 <p>“I am continually impressed by Lisa’s ability to quickly grasp complex legal issues and easily explain them to her clients. I highly recommend Lisa to clients in need of strong representation." -- N.A 3/04/2014
+                </p>
+       </div>
+        <div>
+                 <p>"Lisa genuinely cares about her clients’ well-being. She wants to see you succeed and will offer her helping hand in anyway she can. Hopefully I won’t need to utilize her services again anytime soon, but I know that she’s the first one I’ll call if I ever do!" -- M.W. 2/21/14
+                </p>
+       </div>
+       <div>
+                 <p> “Lisa Wong is warm, educated and very knowledgeable about the law. She helped my son get probation for a criminal offence that could have been 3 years in prison. He did not understand the gravity of what he was involved in and she explained everything. She went out of her way to remind him when items were due to the courts. She was very easy for him to contact, and if she was in court at the time he called, she contacted him within 2 hours. We are very grateful to Lisa for her help and guidance and I highly recommend her. She is a professional who can relate to all ages and explain at the level of understanding needed. Thank you very much Lisa!.” -- C. W. 1/22/14
+                </p>
+       </div>
+       <div>
+                 <p>“Lisa is an amazing attorney, she deserves not only five but six stars in my opinion! I was terrified, confused and confined in jail when I met Lisa, and she really helped clear things up for me. She also has incredibly abundant energy and a great personality. She’s very personable and will talk to you directly, and gets back to you immediately! I highly recommend Lisa.” -- M.C. 11/14/13
+                </p>
+       </div>
+       <div>
+                 <p>“Lisa was recommended to me by my best friends brother and friend of 14 years. He certainly followed through because Lisa is by far a top of the line attorney. Her level of knowledge and prompt professionalism is very rare anymore. She treats me like gold and I’m absolutely sure she will for you as well. couldn’t be more satisfied and would absolutely recommend her to anyone who deserves good legal service.” -- T.M. 10/29/13
+                </p>
+       </div>
 
-        <div><h4><i>"Lisa was recommended to me by my best friends brother and friend of 14 years. He certainly followed through because Lisa is by far a top of the line attorney. Her level of knowledge and prompt professionalism is very rare anymore. She treats me like gold and I’m absolutely sure she will for you as well. couldn’t be more satisfied and would absolutely recommend her to anyone who deserves good legal service." -- T.M. 10/29/13</i></h4></div>
+        <div>
+                 <p>“Ms. Wong is the greatest combination of client focus, professionalism and value I’ve seen in a lawyer.” -- J.W.8/17/13
+                </p>
+         </div>
+        <div>
+                 <p>“This is an attorney who will go the extra mile! She is extremely helpful and informative. I have come to her with a number of family situations and she communicates well and educates me as to what the law is and also how to stay out of trouble! She was also really helpful with giving me advice about a friends DUI. I highly recommend her because her prices are very reasonable and you get quality representation and expertise from her.” -- R.J. 7/19/13
+                </p>
+         </div>
+            <div>
+                 <p>“Ms. Wong is a compassionate advocate who fiercely fights for her clients’ rights. She knows how to navigate the criminal justice system to obtain the best results for her clients. I fully recommend and endorse Ms. Wong.” -- A.K. 7/2013
+                </p>
+         </div>
+            <div>
+                 <p>“Lisa Wong is not only a wonderful attorney but a genuine person as well. She goes the extra mile to ensure you understand what is going on throughout the legal process and offers innovative and new ways to tackle whatever issue is presented. Lisa makes sure that you are her number one priority and is very quick to answer your questions. She doesn’t “waste” your time or money and works hard to ensure her clients are satisfied.” -- A.V. 6/27/13
+                </p>
+         </div>   
+         <div>
+                 <p>“Lisa Wong, a great dui attorney well my name is Terri Allen and I have a lawyer ,but he couldn’t show up for me so he sent her and she was great she was concerned and she is still in touch with me i recommend her to everyone ,she does this for the work she really does care about the client.” -- T.A. 5/23/13
+                </p>
+         </div>
+            <div>
+                 <p>“Lisa was recommended to me by another lawyer who practices a different area of law and recommended Lisa based on her experience and expertise. I had a traffic legal issue with the courts here in LA, and Lisa’s expertise went a long way in helping me close this case out successfully. If I had gone at it alone, I would have been much much worse off. Thank you, Lisa.” -- A.B. 3/26/13
+                </p>
+         </div>
+          <div>
+                 <p>“As an attorney who has had the pleasure of working with Lisa on a number of matters, I can say that she is an experienced and dedicated professional that goes above and beyond for her clients. Yelpers should feel secure in retaining Lisa Wong for their Criminal Defense needs because she has extensive experience and knowledge. With her history as a Public Defender, Lisa has worked with clients on a variety of matters and made a difference for many people. The Law Offices of Lisa Wong, did a great job with the matter which I associated on with them and I look forward to doing business with Lisa in the future. I highly recommend her to others.” -- S.V. 3/13/13
+                </p>
+         </div>
+          <div>
+                 <p>“Lisa Wong is an excellent lawyer. She was very professional but at the same time kept an open enough environment to where I can divulge embarrassing info without feeling judged. Her communication was always on time as well. I never had to ask what was going on with my case because she always in the loop and kept me inside as well. The greatest attribute to her service is that you speak directly to her. She takes the time as busy she may be to make her service personal. I really appreciate all that the Law Office of Lisa Wong did for me and I would recommend her to anyone going through tough legal matters.” -- M.N. 2/01/13
+                </p>
+         </div> 
+         <div>
+                 <p>“Lisa is the best I called around was told a price I could never afford at the other guys. Lisa worked within my budget and was able to get my case settled. I am very happy with the results and I will refer Lisa always should I ever have a need for a lawyer Lisa is my first call. Thanks again Lisa your the Best!” -- D.H. 10/18/12
+                </p>
+         </div>
+         <div>
+                 <p>“Lisa is an excellent lawyer. She will fight for what she feels is right. She helped me understand the complexity of my case and provided, what I believe is, solid advice. Lisa was always prompt in providing updates on the status of my case. She worked with me all through out the way until the case was settled. What I appreciate most about Lisa is that she helped me get though the worst time in my life. Thank you, Lisa!” -- T.D. 8/25/12
+                </p>
+         </div>
+         <div>
+                 <p>“The best of the best!! She is a pitbull who really fights for her clients. I do not live in California, so she called me on a regular basis. I was more than impressed with her efforts! And, she refunded the unused portion of my deposit. Who would have guessed that there were honest lawyers still around.” -- S.C. 6/11/12
+                </p>
+         </div>
+         <div>
+                 <p>“Lisa is a warrior among warriors. I am a fellow lawyer in the community and have heard of of her reputation. She used to at the Riverside Public Defenders Office and was known as a fighter. She always has time to talk with her clients and is very accessible. You will not get a secretary or a run around. The phone goes straight to her. On top of that, I have hit Lisa up for advice on many occasions and she never comes short.” -- H.V. 3/15/12
+                </p>
+         </div>
+         <div>
+                 <p>“I endorse this lawyer. I’ve had the pleasure of attending a week long trial skills seminar with Lisa. Lisa is extremely intelligent and a very hard worker. She is very personable in nature but at the same time extremely aggressive in tackling legal issues and defending her clients. Lisa brought so much to the course we attended together. What a tremendous asset she is to our profession.” -- P.C. 2011
+                </p>
+         </div>
+         <div>
+                 <p>“Lisa is a very bright and diligent San Diego criminal defense attorney. I hope that it never happens, but if I ever had the need to retain a criminal defense attorney, I would not think twice about contacting Lisa Wong.” -- J.W. 2011
+                </p>
+         </div>
+         <div>
+                 <p>“I endorse this lawyer. She is a fighter and an excellent advocate! You are in good hands with Miss Wong!“ --S.A. 03/2013
+                </p>
+         </div>
+    </div> 
 
-        <div><h4><i>“Ms. Wong is the greatest combination of client focus, professionalism and value I’ve seen in a lawyer.” -- J.W.8/17/13</i></h4></div>
-
-        <div><h4><i>“This is an attorney who will go the extra mile! She is extremely helpful and informative. I have come to her with a number of family situations and she communicates well and educates me as to what the law is and also how to stay out of trouble! She was also really helpful with giving me advice about a friends DUI. I highly recommend her because her prices are very reasonable and you get quality representation and expertise from her.” -- R.J. 7/19/13</i></h4></div>
-
-        <div><h4><i>“Ms. Wong is a compassionate advocate who fiercely fights for her clients’ rights. She knows how to navigate the criminal justice system to obtain the best results for her clients. I fully recommend and endorse Ms. Wong.” -- A.K. 7/2013</i></h4></div>
-
-        <div><h4><i>“Lisa Wong is not only a wonderful attorney but a genuine person as well. She goes the extra mile to ensure you understand what is going on throughout the legal process and offers innovative and new ways to tackle whatever issue is presented. Lisa makes sure that you are her number one priority and is very quick to answer your questions. She doesn’t “waste” your time or money and works hard to ensure her clients are satisfied.” -- A.V. 6/27/13</i></h4></div>
-
-        <div><h4><i>“Lisa Wong, a great DUI attorney well my name is Terri Allen and I have a lawyer ,but he couldn’t show up for me so he sent her and she was great she was concerned and she is still in touch with me i recommend her to everyone ,she does this for the work she really does care about the client.” -- T.A. 5/23/13</i></h4></div>
-
-        <div><h4><i>“Lisa was recommended to me by another lawyer who practices a different area of law and recommended Lisa based on her experience and expertise. I had a traffic legal issue with the courts here in LA, and Lisa’s expertise went a long way in helping me close this case out successfully. If I had gone at it alone, I would have been much much worse off. Thank you, Lisa.” -- A.B. 3/26/13</i></h4></div>
-
-
-        <div><h4><i>“As an attorney who has had the pleasure of working with Lisa on a number of matters, I can say that she is an experienced and dedicated professional that goes above and beyond for her clients. Yelpers should feel secure in retaining Lisa Wong for their Criminal Defense needs because she has extensive experience and knowledge. With her history as a Public Defender, Lisa has worked with clients on a variety of matters and made a difference for many people. The Law Offices of Lisa Wong, did a great job with the matter which I associated on with them and I look forward to doing business with Lisa in the future. I highly recommend her to others.” -- S.V. 3/13/13</i></h4></div>
-
-        <div><h4><i>“Lisa Wong is an excellent lawyer. She was very professional but at the same time kept an open enough environment to where I can divulge embarrassing info without feeling judged. Her communication was always on time as well. I never had to ask what was going on with my case because she always in the loop and kept me inside as well. The greatest attribute to her service is that you speak directly to her. She takes the time as busy she may be to make her service personal. I really appreciate all that the Law Office of Lisa Wong did for me and I would recommend her to anyone going through tough legal matters.” -- M.N. 2/01/13</i></h4></div>
-
-        <div><h4><i>“Lisa is the best I called around was told a price I could never afford at the other guys. Lisa worked within my budget and was able to get my case settled. I am very happy with the results and I will refer Lisa always should I ever have a need for a lawyer Lisa is my first call. Thanks again Lisa your the Best!” -- D.H. 10/18/12</i></h4></div>
-
-        <div><h4><i>“Lisa is an excellent lawyer. She will fight for what she feels is right. She helped me understand the complexity of my case and provided, what I believe is, solid advice. Lisa was always prompt in providing updates on the status of my case. She worked with me all through out the way until the case was settled. What I appreciate most about Lisa is that she helped me get though the worst time in my life. Thank you, Lisa!” -- T.D. 8/25/12</i></h4></div>
-
-        <div><h4><i>“The best of the best!! She is a pitbull who really fights for her clients. I do not live in California, so she called me on a regular basis. I was more than impressed with her efforts! And, she refunded the unused portion of my deposit. Who would have guessed that there were honest lawyers still around.” -- S.C. 6/11/12</i></h4></div>
-
-        <div><h4><i>“Lisa is a warrior among warriors. I am a fellow lawyer in the community and have heard of of her reputation. She used to at the Riverside Public Defenders Office and was known as a fighter. She always has time to talk with her clients and is very accessible. You will not get a secretary or a run around. The phone goes straight to her. On top of that, I have hit Lisa up for advice on many occasions and she never comes short.” -- H.V. 3/15/12</i></h4></div>
-
-        <div><h4><i>“I endorse this lawyer. I’ve had the pleasure of attending a week long trial skills seminar with Lisa. Lisa is extremely intelligent and a very hard worker. She is very personable in nature but at the same time extremely aggressive in tackling legal issues and defending her clients. Lisa brought so much to the course we attended together. What a tremendous asset she is to our profession.” -- P.C. 2011</i></h4></div>
-
-        <div><h4><i>“Lisa is a very bright and diligent San Diego criminal defense attorney. I hope that it never happens, but if I ever had the need to retain a criminal defense attorney, I would not think twice about contacting Lisa Wong.” -- J.W. 2011</i></h4></div>
-
-         <div><h4><i>“I endorse this lawyer. She is a fighter and an excellent advocate! You are in good hands with Miss Wong!“ --S.A. 03/2013</i></h4></div>
-
-
-  </div>
-
-</div>
-
-
-    </div>
-
+    <!-- END OF NON MOBILY FRIENDLY SLIDE SHOW -->
         
     <h5>Get your Free Consultation <strong class="animate" data-anim-type="fadeIn" data-anim-delay="300">(619) 363-1776</strong></h5>
     
 </div>
 </div><!-- end features section 1 -->
-</div>
+</div> 
 
 
 
@@ -621,7 +666,7 @@ over the years by sometimes on purpose.</div>
             <li class="cbp-item">
                 <a href="#" class="cbp-caption">
                     <div class="cbp-caption-defaultWrap">
-                        <img src="images/sliders/master/practiceareas/dui.png" alt="">
+                        <img src="images/sliders/master/practiceareas/DUI.png" alt="">
                     </div>
                     <div class="cbp-caption-activeWrap">
                         <div class="cbp-l-caption-alignLeft">
@@ -631,7 +676,7 @@ over the years by sometimes on purpose.</div>
                         </div>
                     </div>
                 </a>
-            </li><!-- end item -->
+            </li>
             
             <li class="cbp-item">
                 <a href="#" class="cbp-caption">
@@ -646,7 +691,7 @@ over the years by sometimes on purpose.</div>
                         </div>
                     </div>
                 </a>
-            </li><!-- end item -->
+            </li>
             
             <li class="cbp-item">
                 <a href="#" class="cbp-caption">
@@ -661,7 +706,7 @@ over the years by sometimes on purpose.</div>
                         </div>
                     </div>
                 </a>
-            </li><!-- end item -->
+            </li>
             
             <li class="cbp-item">
                 <a href="#" class="cbp-caption">
@@ -824,7 +869,7 @@ over the years by sometimes on purpose.</div>
         <div class="right animate" data-anim-type="fadeInRight" data-anim-delay="500">
         
             <h5>Address Location</h5>
-            <h6>2650 Camino Del Rio North, Suite 108 San Diego, CA 92108 Fax: (619) 363-1778 <br /> <a href="#">View Map</a></h6>
+            <h6>2650 Camino Del Rio North, Suite 108 San Diego, CA 92108 Fax: (619) 363-1778 <br /> <a href="https://www.google.com/maps/place/2650+Camino+Del+Rio+N+%23108,+San+Diego,+CA+92108/@32.7732753,-117.135144,17z/data=!3m1!4b1!4m2!3m1!1s0x80d9550586db78d5:0xbe90ef1c50e865a6" target="_blank">View Map</a></h6>
         
         </div><!-- end section -->
     
@@ -869,6 +914,9 @@ over the years by sometimes on purpose.</div>
 <script src="js/mainmenu/bootstrap.min.js"></script> 
 <script src="js/mainmenu/customeUI.js"></script> 
 
+<!-- scroll up -->
+<script src="js/scrolltotop/totop.js" type="text/javascript"></script>
+
 <!-- MasterSlider -->
 <script src="js/masterslider/jquery.easing.min.js"></script>
 <script src="js/masterslider/masterslider.min.js"></script>
@@ -903,10 +951,6 @@ over the years by sometimes on purpose.</div>
 <!-- sticky menu -->
 <script type="text/javascript" src="js/mainmenu/sticky.js"></script>
 <script type="text/javascript" src="js/mainmenu/modernizr.custom.75180.js"></script>
-
-<!-- Accordion-->
-<script type="text/javascript" src="js/accordion/jquery.accordion.js"></script>
-<script type="text/javascript" src="js/accordion/jquery.easing.1.3.js"></script>
 
 <!-- forms -->
 <script src="js/form/jquery.form.min.js"></script>
@@ -986,30 +1030,6 @@ over the years by sometimes on purpose.</div>
 
 <!-- owl carousel -->
 <script src="js/carouselowl/owl.carousel.js"></script>
-
-<!-- it works the same with all jquery version from 1.x to 2.x -->
-<script src="jquery.min.js"></script>
-<script src="jssor.slider.mini.js"></script>
-<script>
-    jQuery(document).ready(function ($) {
-        //Define an array of slideshow transition code
-        var _SlideshowTransitions = [
-        { code1 },
-        { code2 },
-        { code3 }
-        ];
-        var options = {
-            $AutoPlay: true,
-            $SlideshowOptions: {
-                    $Class: $JssorSlideshowRunner$,
-                    $Transitions: _SlideshowTransitions,
-                    $TransitionsOrder: 1,
-                    $ShowLink: true
-                }
-        };
-        var jssor_slider1 = new $JssorSlider$('slider1_container', options);
-    });
-</script>
 
 <!-- tabs -->
 <script src="js/tabs/assets/js/responsive-tabs.min.js" type="text/javascript"></script>

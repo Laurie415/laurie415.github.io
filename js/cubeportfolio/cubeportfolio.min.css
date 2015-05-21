@@ -434,7 +434,7 @@ transition:transform .6s cubic-bezier(.19, 1, .22, 1)
 	position:absolute;
 	top:0;
 	left:0;
-	background-color:rgba(0, 0, 0, 0.9);
+	background-color:rgba(169,169,169);
 -webkit-transition:opacity .8s cubic-bezier(.19, 1, .22, 1);
 transition:opacity .8s cubic-bezier(.19, 1, .22, 1)
 }
