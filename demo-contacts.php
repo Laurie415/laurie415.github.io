@@ -1,7 +1,7 @@
 <?php
 if( isset($_POST['name']) )
 {
-	$to = 'gsrthemes9@gmail.com'; // Replace with your email
+	$to = 'ldxtran@gmail.com'; // Replace with your email
 	
 	$subject = $_POST['subject'];
 	$message = $_POST['message'] . "\n\n" . 'Regards, ' . $_POST['name'] . '.';
